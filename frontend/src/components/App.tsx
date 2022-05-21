@@ -65,6 +65,9 @@ function App() {
   }
 
   function createUser() {
+    setNewUserEmail('');
+    setNewUserPassword('');
+
     setCreatingUser(true);
   }
 
@@ -143,7 +146,7 @@ function App() {
         {creatingUser && (
           <div className="flex justify-between mt-6 bg-white px-4 py-2 items-center">
             <input
-              type="email"
+              type="mail"
               className="focus:outline-none "
               placeholder="email"
               value={newUserEmail}
